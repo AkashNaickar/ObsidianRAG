@@ -1,0 +1,19 @@
+# Copy to config.toml and pass with `obsidian-rag --config config.toml ...`.
+# Every value is optional; the defaults below match the built-in behaviour.
+
+# Where the index is written / read when `--index` is not given.
+index_dir = ".obsidianrag"
+
+# One of: "hashing", "tfidf", "sentence-transformers".
+embedder = "hashing"
+
+# Chunking.
+max_chars = 1000
+overlap = 100
+
+# Retrieval defaults.
+top_k = 5
+min_score = 0.0
+
+# Vector size for the hashing embedder.
+hashing_dim = 1024
