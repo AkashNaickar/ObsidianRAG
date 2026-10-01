@@ -1,9 +1,26 @@
-﻿.venv/
+﻿# virtual environments
+.venv/
 venv/
 env/
+
+# python
 __pycache__/
 *.py[cod]
 *.class
-.env
-.pytest_cache/
+*.egg-info/
+build/
+dist/
 
+# tests / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# generated indexes / local data
+.obsidianrag/
+*.obsidianrag/
+
+# secrets and local config
+.env
+config.toml
